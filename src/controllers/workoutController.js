@@ -27,7 +27,7 @@ const updateOneWorkout = (req, res) => {
 
 const deleteOneWorkout = (req, res) => {
     // *** ADD ***
-    workoutService.deleteOneWorkout();
+    const deleteOneWorkout = workoutService.deleteOneWorkout();
     res.send("Delete an existing workout");
 };
 

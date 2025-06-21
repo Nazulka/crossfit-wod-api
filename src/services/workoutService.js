@@ -1,21 +1,24 @@
-const getAllWorkouts = () => {
+const Workouts = require('../models/Workout');
+
+const getAllWorkouts = async () => {
     return;
 };
+    return await Workouts.find();
 
-const getOneWorkout = () => {
-    return;
+const getOneWorkout = async () => {
+    return await Workouts.find();
 };
 
-const createNewWorkout = () => {
-    return;
+const createNewWorkout =async () => {
+    return await Workouts.create();
 };
 
-const updateOneWorkout = () => {
-    return;
+const updateOneWorkout = async () => {
+    return await Workouts.update();
 };
 
-const deleteOneWorkout = () => {
-    return;
+const deleteOneWorkout = async () => {
+    return await Workouts.update();
 };
 
 module.exports = {
